@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <img id="mainImage" class="main-image" src="https://picsum.photos/800/400?random=1" alt="Main Image">
+    <div class="nav-buttons">
+      <button id="prevBtn" onclick="changeImage(-1)">Previous</button>
+      <button id="nextBtn" onclick="changeImage(1)">Next</button>
+    </div>
+    <div class="thumbnails">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=1" onclick="setImage(0)" alt="Thumbnail 1">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=2" onclick="setImage(1)" alt="Thumbnail 2">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=3" onclick="setImage(2)" alt="Thumbnail 3">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=4" onclick="setImage(3)" alt="Thumbnail 4">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=5" onclick="setImage(4)" alt="Thumbnail 5">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=6" onclick="setImage(5)" alt="Thumbnail 6">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=7" onclick="setImage(6)" alt="Thumbnail 7">
+      <img class="thumbnail" src="https://picsum.photos/80/80?random=8" onclick="setImage(7)" alt="Thumbnail 8">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
